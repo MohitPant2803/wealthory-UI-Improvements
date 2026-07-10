@@ -7,7 +7,7 @@
   <meta name="description" content="Use our free lumpsum calculator to estimate returns on your one-time investment. Calculate future value of lumpsum investment with compound interest instantly.">
   <meta name="keywords" content="lumpsum calculator, lumpsum investment calculator, one time investment calculator, lump sum returns, compound interest calculator">
   <link rel="canonical" href="https://app.wealthoryglobal.com/lumpsum/">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=11">
 
   <script type="application/ld+json">
   {
@@ -62,10 +62,15 @@
 </head>
 <body>
 
-  <header>
+    <header>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/" class="logo" aria-label="Wealthory Home"><img src="/assets/logo.png" alt="Wealthory Logo" /></a>
-      <div class="nav-links"><a href="/resources">Resources</a><a href="/" class="nav-cta">All Tools</a>
+      <a href="/" class="logo" aria-label="Wealthory Home">
+        <img src="/assets/logo.png" alt="Wealthory Logo" />
+      </a>
+      <div class="nav-links">
+        <a href="https://admin.wealthoryglobal.com" class="nav-utility">Advisor Login</a>
+        <a href="/resources" class="nav-link">Insights</a>
+        <a href="/" class="nav-cta">All Tools</a>
         <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
           <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
           <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -171,9 +176,20 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Wealthory Global. All rights reserved.</p>
-    <nav aria-label="Footer navigation" style="margin-top:0.5rem;"><a href="/">Home</a><a href="/resources">Resources</a></nav>
+    <footer class="compliance-footer">
+    <div class="footer-inner">
+      <div class="footer-disclaimer">
+        <p><strong>Risk Warning:</strong> Mutual fund investments are subject to market risks, read all scheme related documents carefully. The calculators provided on this platform are for illustrative purposes only and do not constitute financial advice. Past performance is not indicative of future returns.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Wealthory Global. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/grievance">Grievance Redressal</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
@@ -202,7 +218,7 @@
           labels: ['Invested Amount', 'Estimated Returns'],
           datasets: [{
             data: [0, 0],
-            backgroundColor: ['#0044CC', '#FFB300'],
+            backgroundColor: ['#0044CC', '#00B3FF'],
             borderWidth: 0,
             hoverOffset: 6
           }]

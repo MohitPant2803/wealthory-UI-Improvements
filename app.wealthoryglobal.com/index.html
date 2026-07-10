@@ -16,17 +16,17 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/style.css?v=11" />
 </head>
 <body>
-  <header>
+    <header>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="/" class="logo" aria-label="Wealthory Home">
         <img src="/assets/logo.png" alt="Wealthory Logo" />
       </a>
       <div class="nav-links">
         <a href="https://admin.wealthoryglobal.com" class="nav-utility">Advisor Login</a>
-        <a href="/resources">Insights</a>
+        <a href="/resources" class="nav-link">Insights</a>
         <a href="/sip" class="nav-cta">Explore Tools</a>
         <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
           <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -56,9 +56,9 @@
       <div class="tools-grid">
         <a href="/sip" class="tool-card" aria-label="SIP Calculator">
           <div class="card-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 21h18M4 16h4v4H4zM10 10h4v10h-4zM16 4h4v16h-4z"/>
-              <path d="M4 12l6-6 7-3" stroke="var(--color-primary)" stroke-width="2"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
             </svg>
           </div>
           <h3>SIP & Wealth Builder</h3>
@@ -66,12 +66,13 @@
         </a>
         <a href="/emi" class="tool-card" aria-label="EMI Calculator">
           <div class="card-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-              <path d="M9 22V12h6v10"/>
-              <circle cx="10" cy="8" r="1.5" fill="var(--color-primary)" stroke="none"/>
-              <circle cx="14" cy="12" r="1.5" fill="var(--color-primary)" stroke="none"/>
-              <line x1="14" y1="8" x2="10" y2="12" stroke="var(--color-primary)" stroke-width="2"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="22" x2="21" y2="22"></line>
+              <line x1="6" y1="18" x2="6" y2="11"></line>
+              <line x1="10" y1="18" x2="10" y2="11"></line>
+              <line x1="14" y1="18" x2="14" y2="11"></line>
+              <line x1="18" y1="18" x2="18" y2="11"></line>
+              <polygon points="12 2 2 7 22 7"></polygon>
             </svg>
           </div>
           <h3>EMI & Loan Planner</h3>
@@ -79,13 +80,10 @@
         </a>
         <a href="/goal-planner" class="tool-card" aria-label="Goal Planner">
           <div class="card-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <circle cx="12" cy="12" r="6"/>
-              <circle cx="12" cy="12" r="2" fill="var(--color-primary)" stroke="var(--color-primary)"/>
-              <path d="M22 2l-8 8" stroke="var(--color-primary)" stroke-width="2"/>
-              <line x1="22" y1="2" x2="18" y2="2" stroke="var(--color-primary)" stroke-width="2"/>
-              <line x1="22" y1="2" x2="22" y2="6" stroke="var(--color-primary)" stroke-width="2"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
             </svg>
           </div>
           <h3>Dream Goal Planner</h3>
@@ -93,10 +91,8 @@
         </a>
         <a href="/retirement" class="tool-card" aria-label="Retirement Planner">
           <div class="card-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 12A10 10 0 0 0 2 12h20z"/>
-              <path d="M12 12v7a2 2 0 0 0 4 0"/>
-              <circle cx="12" cy="7" r="2.5" fill="var(--color-primary)" stroke="none"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 12a11.02 11.02 0 0 0-22 0zm-11 0v9a2 2 0 0 0 4 0"></path>
             </svg>
           </div>
           <h3>Retirement Planner</h3>
@@ -104,9 +100,8 @@
         </a>
         <a href="/fire" class="tool-card" aria-label="FIRE Calculator">
           <div class="card-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2c-3.1 3-5 6.4-5 9 0 3.3 2.7 6 6 6s6-2.7 6-6c0-2.6-1.9-6-5-9z"/>
-              <path d="M12 7c-1.5 2-2 3.5-2 5 0 1.1.9 2 2 2s2-.9 2-2c0-1.5-.5-3-2-5z" fill="var(--color-primary)" stroke="none"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
             </svg>
           </div>
           <h3>FIRE Calculator</h3>
@@ -114,9 +109,8 @@
         </a>
         <a href="/tax" class="tool-card" aria-label="Tax Estimator">
           <div class="card-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              <path d="M9 12l2 2 4-4" stroke="var(--color-primary)" stroke-width="2"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
             </svg>
           </div>
           <h3>Income Tax Saver</h3>
@@ -124,13 +118,8 @@
         </a>
         <a href="/fd-vs-mf" class="tool-card" aria-label="FD vs Mutual Funds">
           <div class="card-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3v18M9 21h6"/>
-              <path d="M3 10l9-6 9 6"/>
-              <circle cx="6" cy="14" r="2.5" fill="var(--color-primary)" stroke="none"/>
-              <path d="M3 10v4a3 3 0 0 0 6 0v-4" stroke="currentColor"/>
-              <circle cx="18" cy="14" r="2.5" fill="var(--color-primary)" stroke="none" opacity="0.4"/>
-              <path d="M15 10v4a3 3 0 0 0 6 0v-4" stroke="currentColor"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 7h-6M8 7H2M12 2v20M3 22h18M6 7l2 5h-4l2-5zm12 0l2 5h-4l2-5z"/>
             </svg>
           </div>
           <h3>FD vs Mutual Funds</h3>
@@ -138,11 +127,9 @@
         </a>
         <a href="/cost-of-delay" class="tool-card" aria-label="Cost of Delay Calculator">
           <div class="card-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10" stroke-width="2"/>
-              <path d="M12 6v6l4 2" stroke="var(--color-primary)" stroke-width="2"/>
-              <path d="M16 12l2-2" stroke="var(--color-primary)" stroke-width="2"/>
-              <path d="M8 12l-2-2" stroke="var(--color-primary)" stroke-width="2"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
             </svg>
           </div>
           <h3>Cost of Delay</h3>
@@ -150,9 +137,10 @@
         </a>
         <a href="/swp" class="tool-card" aria-label="SWP Calculator">
           <div class="card-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="var(--color-primary)" stroke-width="2"/>
-              <path d="M7 16l-4 4 4 4M21 4l-4-4-4 4"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+              <path d="M3 10h18a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2z"></path>
+              <circle cx="18" cy="16" r="1"></circle>
             </svg>
           </div>
           <h3>SWP Pension Planner</h3>
@@ -162,7 +150,7 @@
     </section>
   </main>
 
-  <footer class="compliance-footer">
+    <footer class="compliance-footer">
     <div class="footer-inner">
       <div class="footer-disclaimer">
         <p><strong>Risk Warning:</strong> Mutual fund investments are subject to market risks, read all scheme related documents carefully. The calculators provided on this platform are for illustrative purposes only and do not constitute financial advice. Past performance is not indicative of future returns.</p>
