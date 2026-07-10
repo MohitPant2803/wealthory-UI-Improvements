@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #f8f9fa;
+  --foreground: #0a0a0a;
+  
+  --surface: #ffffff;
+  --surface-hover: #f1f3f5;
+  
+  --border: #e5e7eb;
+  
+  --accent-primary: #2563eb; /* Blue accent for light theme */
+  --accent-primary-hover: #1d4ed8;
+  --accent-secondary: #000000;
+  
+  --text-muted: #6b7280;
+  
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+.dark {
+  --background: #050508;
+  --foreground: #f0f0f0;
+  
+  --surface: #0d0d12;
+  --surface-hover: #16161d;
+  
+  --border: rgba(255, 255, 255, 0.08);
+  
+  --accent-primary: #c9a84c; /* Gold/Yellow accent for dark theme */
+  --accent-primary-hover: #e0c675;
+  --accent-secondary: #ffffff;
+  
+  --text-muted: #8a8a8a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-primary-hover: var(--accent-primary-hover);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-text-muted: var(--text-muted);
+  
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(var(--surface), 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes dopaminePulse {
+  0% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(201, 168, 76, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0); }
+}
